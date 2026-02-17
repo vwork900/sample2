@@ -43,3 +43,17 @@ Boolean Assertion Fail
     Log    ===== Step 1: Validate Boolean =====    INFO
     Log    ERROR: Expected True but got False    ERROR
     Should Be True    False    This assertion is designed to fail
+
+
+Multiplication Should Fail Wrong Result
+    Log    ===== Step 1: Perform Multiplication (4 * 5) =====    INFO
+    ${result}=    Multiply Two Numbers    4    5
+    Log    ERROR: Expected 100 but got ${result}    ERROR
+    Should Be Equal As Numbers    ${result}    100
+
+
+Division Should Fail Wrong Result
+    Log    ===== Step 1: Perform Division (15 / 3) =====    INFO
+    ${result}=    Divide Numbers    15    3
+    Log    ERROR: Expected 10 but got ${result}    ERROR
+    Should Be Equal As Numbers    ${result}    10

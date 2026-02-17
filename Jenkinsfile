@@ -7,8 +7,8 @@ pipeline {
     }
 
     options {
-        buildDiscarder(logRotator(numToKeepStr: '10'))
-        timeout(time: 15, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '15'))
+        timeout(time: 20, unit: 'MINUTES')
         gitConnectionTimeout(60)
     }
 

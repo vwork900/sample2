@@ -1,5 +1,7 @@
 # Robot Framework + Jenkins + Report Portal
 
+**Version:** 1.1 (branch: feature/updates)
+
 This project contains **Robot Framework** test suites, a **Jenkins pipeline** that checks out from **GitHub** and runs them, and optional **Report Portal** integration to push results into Report Portal.
 
 ---

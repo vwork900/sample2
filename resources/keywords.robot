@@ -27,3 +27,8 @@ Divide Numbers
     [Arguments]    ${a}    ${b}
     ${result}=    Evaluate    ${a} / ${b}
     [Return]    ${result}
+
+Multiply Two Numbers
+    [Arguments]    ${a}    ${b}
+    ${result}=    Evaluate    ${a} * ${b}
+    [Return]    ${result}
